@@ -3,64 +3,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Crimson+Text&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>My Personal Website</title>
   </head>
 
   <body>
-    <table cellspacing="10">
-      <tr>
-        <td>
-          <img
-            src="https://miro.medium.com/fit/c/128/128/1*-hgD5bM7SyT89mdNdvwKsw.jpeg"
-            alt="Profile Picture"
-          />
-        </td>
-        <td>
-          <h1>Ashok Kumar</h1>
+    <div class="main-container">
+      <h1>Ashok</h1>
+      <h3>A data scientist</h3>
+      <div class="intro">
+        <img class="intro-image" src="intro.jpg" />
+        <p class="intro-text">
+          I am currently working as a ML Engineer at Psyinnovations India. I'm
+          part of the data science team that deals all kinds of usecases in a
+          data driven approach
+        </p>
+      </div>
+      <hr />
+      <h2><strong>Articles</strong></h2>
+      <div class="article-container">
+        <div class="left-image-container">
+          <img class="image-group" src="content.png" alt="" />
+        </div>
+
+        <div class="left-text-container">
+          <h3>N-Gram Language Models</h3>
           <p>
-            <em
-              >This is Ashok, I am a
-              <strong>ML Engineer at Psyinnovations India</strong>
-            </em>
+            This is a discussion about language modeling, generate the text
+            using N-gram LM, and sentence probability estimation using N-gram
+            Language Models
           </p>
+        </div>
+      </div>
+      <div class="article-container">
+        <div class="right-text-container">
+          <h3>Markov Chains</h3>
           <p>
-            I am part of the data science team at Psyinnovations India. I like
-            playing football
+            This is a discussion on Markov Chains and their implementations in
+            python
           </p>
-          <a href="pages/contact-me.html">Contact me</a>
-        </td>
-      </tr>
-    </table>
-    <hr size="4" noshade />
-    <h3>Publications</h3>
-    <ul>
-      <li><a href="pages/articles-published.html">Articles published</a></li>
-      <li>
-        <a href="pages/articles-yet-to-publish.html">
-          Articles yet to publish</a
+        </div>
+        <div class="right-image-container">
+          <img class="image-group" src="content.png" alt="" />
+        </div>
+      </div>
+      <div class="article-container">
+        <div class="left-image-container">
+          <img class="image-group" src="content.png" alt="" />
+        </div>
+
+        <div class="left-text-container">
+          <h3>Covariance and Correlation</h3>
+          <p>
+            This is a discussion on Mean, Variance, Covariance, Correlation and
+            their implementation using python
+          </p>
+        </div>
+      </div>
+      <div class="article-container">
+        <div class="right-text-container">
+          <h3>The Concept of Error Analysis</h3>
+          <p>
+            This is a discussion of precision, recall and mathematical
+            operations like Macro Average and Weighted Average
+          </p>
+        </div>
+        <div class="right-image-container">
+          <img class="image-group" src="content.png" alt="" />
+        </div>
+      </div>
+      <div class="article-container">
+        <div class="left-image-container">
+          <img class="image-group" src="content.png" alt="" />
+        </div>
+
+        <div class="left-text-container">
+          <h3>Entropy and Loss Functions</h3>
+          <p>
+            This is a discussion about entropy and how loss functions work in
+            classification related problems
+          </p>
+        </div>
+      </div>
+      <div class="article-container">
+        <div class="right-text-container">
+          <h3>Trivial functionality of Pandas</h3>
+          <p>
+            This is a discussion on various features of Pandas and the
+            functionality.
+          </p>
+        </div>
+        <div class="right-image-container">
+          <img class="image-group" src="content.png" alt="" />
+        </div>
+      </div>
+      <hr />
+      <div class="contact">
+        <img class="contact-img" src="contact.svg" />
+        <p class="contact-text">
+          lets's keep in touch and if you need something from me, drop a message
+        </p>
+      </div>
+      <div class="contact-me">
+        <form
+          action="mailto:ambatiashok60@gmail.com"
+          method="post"
+          enctype="text/plain"
         >
-      </li>
-    </ul>
-    <hr size="4" noshade />
-    <h3>Skills</h3>
-    <table cellspacing="10">
-      <tr>
-        <td>Python</td>
-        <td>⭐️⭐️⭐️⭐️⭐️</td>
-      </tr>
-      <tr>
-        <td>R</td>
-        <td>⭐️⭐️⭐️⭐️</td>
-      </tr>
-      <tr>
-        <td>js</td>
-        <td>⭐️⭐️⭐️</td>
-      </tr>
-      <tr>
-        <td>css</td>
-        <td>⭐️⭐️⭐️</td>
-      </tr>
-    </table>
-    <hr size="4" noshade />
+          <div class="input-fields">
+            <label class="input-label"> Your Name </label>
+            <input
+              class="input-text"
+              autocomplete="off"
+              type="text"
+              name="yourName"
+              id=""
+            />
+          </div>
+          <div class="input-fields">
+            <label class="input-label"> Email </label>
+            <input
+              class="input-text"
+              autocomplete="off"
+              type="email"
+              name="yourEmail"
+              id=""
+            />
+          </div>
+          <br />
+          <label class="input-label"> Message </label>
+          <div class="message-box">
+            <textarea
+              class="input-message"
+              autocomplete="off"
+              name="yourMessage"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
